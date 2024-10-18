@@ -42,5 +42,5 @@ FireAndBloodNextJS is a Next.js website dedicated to showcasing dragons and char
 For any inquiries or support, please contact [usama.fayyaz157@gmail.com].
 
 
-![Alt text](./screenshots/1.png)
-![Alt text](./screenshots/2.png)
+![Alt text](./screenshot/1.png)
+![Alt text](./screenshot/2.png)
