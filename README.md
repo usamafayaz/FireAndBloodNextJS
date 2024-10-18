@@ -1,6 +1,7 @@
 # FireAndBloodNextJS
 
 ## Overview
+
 FireAndBloodNextJS is a Next.js website dedicated to showcasing dragons and characters from the House of the Dragon series. Users can explore detailed information, including the size, age, origins, and past riders of dragons, as well as character statistics and quotes. The platform also features a search functionality to easily find specific dragons or characters.
 
 ## Features
@@ -13,34 +14,40 @@ FireAndBloodNextJS is a Next.js website dedicated to showcasing dragons and char
 
 - **Frontend**: Next.js
 - **Styling**: Tailwind CSS
-  
+
 ## Installation and Setup
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/usamafayaz/FireAndBloodNextJS.git
-    ```
+
+   ```bash
+   git clone https://github.com/usamafayaz/FireAndBloodNextJS.git
+   ```
 
 2. Navigate to the project directory:
-    ```bash
-    cd FireAndBloodNextJS
-    ```
+
+   ```bash
+   cd FireAndBloodNextJS
+   ```
 
 3. Install the dependencies:
-    ```bash
-    npm install
-    ```
+
+   ```bash
+   npm install
+   ```
 
 4. Run the development server:
-    ```bash
-    npm run dev
-    ```
+
+   ```bash
+   npm run dev
+   ```
 
 5. Open your browser and visit `http://localhost:3000` to view the website.
 
 ## Contact
+
 For any inquiries or support, please contact [usama.fayyaz157@gmail.com].
 
-
-![Alt text](./screenshot/1.png)
-![Alt text](./screenshot/2.png)
+![Alt text](./screenshots/1.png)
+![Alt text](./screenshots/2.png)
+![Alt text](./screenshots/3.png)
+![Alt text](./screenshots/4.png)
