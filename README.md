@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FireAndBloodNextJS
 
-## Getting Started
+## Overview
+FireAndBloodNextJS is a Next.js website dedicated to showcasing dragons and characters from the House of the Dragon series. Users can explore detailed information, including the size, age, origins, and past riders of dragons, as well as character statistics and quotes. The platform also features a search functionality to easily find specific dragons or characters.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Dragon Information**: View detailed descriptions of various dragons, including size, age, and origin.
+- **Character Profiles**: Explore character details, including age and notable actions.
+- **Search Functionality**: Quickly search for specific dragons or characters to find the information you need.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technology Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend**: Next.js
+- **Styling**: Tailwind CSS
+  
+## Installation and Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/usamafayaz/FireAndBloodNextJS.git
+    ```
 
-## Learn More
+2. Navigate to the project directory:
+    ```bash
+    cd FireAndBloodNextJS
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Run the development server:
+    ```bash
+    npm run dev
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+5. Open your browser and visit `http://localhost:3000` to view the website.
 
-## Deploy on Vercel
+## Contact
+For any inquiries or support, please contact [usama.fayyaz157@gmail.com].
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![Alt text](./screenshots/1.png)
+![Alt text](./screenshots/2.png)
