@@ -1,6 +1,5 @@
 "use client";
 import { useParams } from "next/navigation";
-import Link from "next/link";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import Image from "next/image";
