@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -27,11 +28,15 @@ const Characters: React.FC = () => {
         {characters.map((character, index) => (
           <Link key={index} href={`/characters/${character.id}`} passHref>
             <div className="group relative border-2 border-gray-800 bg-black rounded-lg overflow-hidden shadow-lg transform transition-transform hover:scale-105 hover:border-gray-300">
-              <img
-                src={character.image}
-                alt={character.name}
-                className="w-full h-48 object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-              />
+              <div className="relative w-full h-48">
+                <Image
+                  src={character.image}
+                  alt={character.name}
+                  fill
+                  className="object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                />
+              </div>
+
               <div className="p-4 text-center">
                 <h3 className="font-semibold text-lg text-white transition-colors duration-300">
                   {character.name}

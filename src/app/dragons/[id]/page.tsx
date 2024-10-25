@@ -3,6 +3,7 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import Image from "next/image";
 
 // Sample data for dragon details
 const dragonDetails: Record<
@@ -113,12 +114,14 @@ const DragonDetail: React.FC = () => {
         <h3 className="text-3xl font-bold text-white mb-4 tracking-widest">
           {dragonName}
         </h3>
-
-        <img
-          src={dragonInfo.image}
-          alt={dragonName}
-          className="w-full h-96 object-contain mb-6 rounded-lg shadow-lg border-2 border-gray-800 transition-transform duration-500 ease-in-out transform hover:scale-95"
-        />
+        <div className="relative w-full h-96 mb-6 rounded-lg shadow-lg border-2 border-gray-800 transition-transform duration-500 ease-in-out transform hover:scale-95">
+          <Image
+            src={dragonInfo.image}
+            alt={dragonName}
+            fill
+            className="object-contain rounded-lg"
+          />
+        </div>
         {dragonInfo ? (
           <>
             <p className="text-lg text-gray-300 mb-2">

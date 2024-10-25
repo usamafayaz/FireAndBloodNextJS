@@ -1,4 +1,5 @@
 // components/header/Header.tsx
+import Image from "next/image";
 import Link from "next/link";
 
 const Header: React.FC = () => {
@@ -6,7 +7,13 @@ const Header: React.FC = () => {
     <header className="bg-black text-white p-4 shadow-lg ">
       <nav className="container mx-auto flex justify-between items-center">
         <Link href="/" className="flex-row flex items-center">
-          <img src="/logo.png" alt="House Of Dragons Logo" className="h-10" />
+          <Image
+            src="/logo.png"
+            alt="House Of Dragons Logo"
+            width={40} // Set based on the actual aspect ratio of the logo
+            height={40} // Set based on the desired height, e.g., 40px
+            className="h-10"
+          />
           <h2 className="text-2xl font-bold ml-2">House of Dragons</h2>
         </Link>
 

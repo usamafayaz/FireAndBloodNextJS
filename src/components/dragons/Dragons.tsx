@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
@@ -33,9 +34,13 @@ const DragonList: React.FC = () => {
         <h3 className="text-center text-4xl font-bold text-white mb-4 ">
           Dracarys!
         </h3>
-
-        <div className="flex justify-center mb-8 ml-6 mt-4">
-          <img src="/fire.gif" alt="Dracarys GIF" />
+        <div className="relative w-32 h-32 flex justify-center mb-8 ml-6 mt-4">
+          <Image
+            src="/fire.gif"
+            alt="Dracarys GIF"
+            fill
+            className="object-contain"
+          />
         </div>
         <div className="flex items-center mb-8 ml-auto relative w-96">
           {/* Search input with icon */}
@@ -60,11 +65,14 @@ const DragonList: React.FC = () => {
                 key={index}
                 className="group relative border-2 border-gray-800 bg-black rounded-lg overflow-hidden shadow-lg transform transition-transform hover:scale-105 hover:border-gray-300"
               >
-                <img
-                  src={dragon.image}
-                  alt={dragon.name}
-                  className="w-full h-48 object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                />
+                <div className="relative w-full h-48">
+                  <Image
+                    src={dragon.image}
+                    alt={dragon.name}
+                    fill
+                    className="object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                  />
+                </div>
                 <div className="p-4 text-center">
                   <h3 className="font-semibold text-lg text-white transition-colors duration-300">
                     {dragon.name}

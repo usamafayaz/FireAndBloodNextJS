@@ -3,6 +3,7 @@ import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import DragonList from "../components/dragons/Dragons";
 import Characters from "../components/characters/Characters";
+import Image from "next/image";
 
 const Home: React.FC = () => {
   return (
@@ -11,10 +12,12 @@ const Home: React.FC = () => {
       <main className="container mx-auto p-4 bg-black">
         <DragonList />
         <div className="w-full mt-8">
-          <img
+          <Image
             src="/banner.jpg"
             alt="House of Dragons"
             className="w-full h-auto rounded-md"
+            width={1000}
+            height={600}
           />
         </div>
         <Characters />

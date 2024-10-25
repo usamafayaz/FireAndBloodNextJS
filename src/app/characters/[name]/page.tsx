@@ -2,6 +2,7 @@
 import { useParams } from "next/navigation";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import Image from "next/image";
 
 const CharacterDetail: React.FC = () => {
   const characters = [
@@ -85,11 +86,14 @@ const CharacterDetail: React.FC = () => {
           <h3 className="text-3xl font-bold text-white mb-4">
             {characterInfo.name}
           </h3>
-          <img
-            src={characterInfo.image}
-            alt={characterInfo.name}
-            className="w-full h-96 object-contain mb-6 rounded-lg shadow-lg border-2 border-gray-800 transition-transform duration-500 ease-in-out transform hover:scale-95"
-          />
+          <div className="relative w-full h-96 mb-6 rounded-lg shadow-lg border-2 border-gray-800 transition-transform duration-500 ease-in-out transform hover:scale-95">
+            <Image
+              src={characterInfo.image}
+              alt={characterInfo.name}
+              fill
+              className="object-contain rounded-lg"
+            />
+          </div>
           <p className="text-lg text-gray-300 mb-2">
             <strong>Age:</strong> {characterInfo.age}
           </p>
