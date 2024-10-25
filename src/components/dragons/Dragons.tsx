@@ -21,7 +21,7 @@ const dragons: Dragon[] = [
 ];
 
 const DragonList: React.FC = () => {
-  const [searchTerm, setSearchTerm] = useState(""); // State to manage search input
+  const [searchTerm, setSearchTerm] = useState("");
 
   // Filter dragons based on the search term
   const filteredDragons = dragons.filter((dragon) =>
@@ -30,33 +30,32 @@ const DragonList: React.FC = () => {
 
   return (
     <section className="container mx-auto p-4">
-      <div className="flex flex-row items-center justify-between">
-        <h3 className="text-center text-4xl font-bold text-white mb-4 ">
-          Dracarys!
-        </h3>
-        <div className="relative w-32 h-32 flex justify-center mb-8 ml-6 mt-4">
-          <Image
-            src="/fire.gif"
-            alt="Dracarys GIF"
-            fill
-            className="object-contain"
-          />
+      <div className="flex flex-col md:flex-row items-center justify-between">
+        <div className="flex items-center mb-4 md:mb-0 mt-2">
+          <h3 className="text-center text-3xl font-bold text-white mr-4">
+            Dracarys!
+          </h3>
+          <div className="relative w-32 h-32 flex justify-center">
+            <Image
+              src="/fire.gif"
+              alt="Dracarys GIF"
+              fill
+              className="object-contain"
+            />
+          </div>
         </div>
-        <div className="flex items-center mb-8 ml-auto relative w-96">
-          {/* Search input with icon */}
+        <div className="flex items-center mb-8 relative w-full md:w-96 z-0">
           <input
             type="text"
             placeholder="Search for a dragon..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="p-2 rounded-md border w-full border-gray-700 text-black pl-10" // padding-left for icon
+            className="p-2 rounded-md border w-full border-gray-700 text-black pl-10 z-0"
           />
-          {/* Search icon inside the input */}
           <FaSearch className="absolute left-3 text-gray-500" />
         </div>
       </div>
 
-      {/* Display filtered dragons */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredDragons.length > 0 ? (
           filteredDragons.map((dragon, index) => (

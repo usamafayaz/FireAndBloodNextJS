@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         </p>
         <p className="text-sm">
           &copy; {new Date().getFullYear()}
-          <span className="font-bold text-white">House Of Dragons</span>. All
+          <span className="font-bold text-white"> House Of Dragons</span>. All
           rights reserved.
         </p>
       </div>
