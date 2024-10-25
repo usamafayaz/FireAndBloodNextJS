@@ -53,6 +53,9 @@ https://fire-and-blood-next-js.vercel.app/
 For any inquiries or support, please contact [usama.fayyaz157@gmail.com].
 
 ![Alt text](./screenshots/1.png)
+<br>  
 ![Alt text](./screenshots/2.png)
+<br>
 ![Alt text](./screenshots/3.png)
+<br>  
 ![Alt text](./screenshots/4.png)
