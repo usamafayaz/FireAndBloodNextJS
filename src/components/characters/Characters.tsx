@@ -11,7 +11,7 @@ interface Character {
 }
 
 const characters: Character[] = [
-  { id: 1, name: "Daemon", image: "/characters/daemon.jpg" },
+  { id: 1, name: "Daemon Targaryen", image: "/characters/daemon.jpg" },
   { id: 2, name: "Daenerys Targaryen", image: "/characters/daenerys.jpg" },
   { id: 3, name: "Tyrion Lannister", image: "/characters/tyrion.jpg" },
   { id: 4, name: "Jon Snow", image: "/characters/jon.jpg" },
@@ -23,7 +23,6 @@ const characters: Character[] = [
 const Characters: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Filter characters based on the search term
   const filteredCharacters = characters.filter((character) =>
     character.name.toLowerCase().includes(searchTerm.toLowerCase())
   );

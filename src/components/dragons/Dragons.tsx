@@ -23,7 +23,6 @@ const dragons: Dragon[] = [
 const DragonList: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Filter dragons based on the search term
   const filteredDragons = dragons.filter((dragon) =>
     dragon.name.toLowerCase().includes(searchTerm.toLowerCase())
   );

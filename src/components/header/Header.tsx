@@ -42,9 +42,7 @@ const Header: React.FC = () => {
           <li>
             <Link
               href="/"
-              className={`block md:border md:border-gray-500 rounded-md text-sm px-4 py-2 hover:bg-gray-800 transition ${
-                isMenuOpen ? "mt-2" : "md:mt-0"
-              }`}
+              className={`block md:border md:border-gray-500 rounded-md text-sm px-4 py-2 hover:bg-gray-800 transition}`}
               onClick={toggleMenu}
             >
               Home
