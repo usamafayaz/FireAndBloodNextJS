@@ -20,7 +20,7 @@ FireAndBloodNextJS is a Next.js website dedicated to showcasing dragons and char
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/usamafayaz/FireAndBloodNextJS.git
+   git clone https://github.com/usamafayaz/fire-and-blood-nextjs.git
    ```
 
 2. Navigate to the project directory:

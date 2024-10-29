@@ -1,7 +1,5 @@
 "use client";
 import { useParams } from "next/navigation";
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
 import Image from "next/image";
 
 // Sample data for dragon details
@@ -107,8 +105,6 @@ const DragonDetail: React.FC = () => {
 
   return (
     <div className="container mx-auto">
-      <Header />
-
       <div className="bg-black p-8 rounded-lg shadow-xl">
         <h3 className="text-3xl font-bold text-white mb-4 tracking-widest">
           {dragonName}
@@ -146,7 +142,6 @@ const DragonDetail: React.FC = () => {
           <p className="text-lg text-gray-300 mb-4">No details available.</p>
         )}
       </div>
-      <Footer />
     </div>
   );
 };
