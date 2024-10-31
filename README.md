@@ -26,7 +26,7 @@ FireAndBloodNextJS is a Next.js website dedicated to showcasing dragons and char
 2. Navigate to the project directory:
 
    ```bash
-   cd FireAndBloodNextJS
+   cd fire-and-blood-nextjs
    ```
 
 3. Install the dependencies:
